@@ -60,7 +60,7 @@ session_start();
           <br />
           Phone Number: 9814564561
           <br />
-          Email:greegp@gmail.com
+          Email:greengarden@gmail.com
           <br />
           Seat Capacity: 800 people
           <br />

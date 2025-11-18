@@ -29,7 +29,7 @@ session_start();
                 </div>
                 <div class="input-box">
                     <span class="details">Password</span>
-                    <input type="password" name="apassword" placeholder="">
+                    <input type="password" name="apassword" placeholder="Enter your password">
                 </div></div>
                 <div class="button">
                     <input type="submit" name="submit" value="Log In">

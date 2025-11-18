@@ -11,8 +11,8 @@ session_start();
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="linkstyle.css">
 </head>
-<body>
-    <div class="image">
+<body class="image">
+    <div class="">
         <div class="navbar">
             <a href="signedin.php"> <img src="photo/logo.png" class="logo" /></a>
           <ul>

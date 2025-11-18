@@ -1,134 +1,155 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     font-family: sans-serif;
 }
 
-.front{
+.front {
     width: 100%;
-    height: 110vh;
-    background-image: linear-gradient(rgba(77, 70, 71, 0.5),rgba(152, 89, 152, 0.25)),url(photo/cover.jfif);
+    height: 100vh;
+    background-image: linear-gradient(rgba(77, 70, 71, 0.5), rgba(152, 89, 152, 0.25)), url(photo/cover.jfif);
     min-height: 100%;
     background-repeat: repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
-.ufront{
+
+.ufront {
     width: 100%;
-    height: 110vh;
-    background-image: linear-gradient(rgba(77, 70, 71, 0.5),rgba(152, 89, 152, 0.25)),url(photo/cover.jfif);
+    height: 100vh;
+    background-image: linear-gradient(rgba(77, 70, 71, 0.5), rgba(152, 89, 152, 0.25)), url(photo/cover.jfif);
+    /* background-image: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 25%)), url(photo/cover.jfif); */
     min-height: 100%;
     background-repeat: repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    backdrop-filter: blur(7px);
 }
-.navbar{
-    width:90%;
-    margin:auto;
+
+.navbar {
+    width: 90%;
+    margin: auto;
     padding: 8px 0;
     padding-bottom: 0px;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    position:static;
+    position: static;
 }
-.logo{
-    width:100px;
+
+.logo {
+    width: 100px;
     cursor: pointer;
     border-radius: 50%;
 }
-.navbar ul li{
-    list-style:none;
+
+.navbar ul li {
+    list-style: none;
     font-size: large;
-    display:inline-block;
+    display: inline-block;
     margin: 0 20px;
-     position: relative;
-    
+    position: relative;
+
 }
-.navbar ul li a{
+
+.navbar ul li a {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
 }
-.navbar ul li::after{
-    content:'';
-    height:3px;
-    width:0;
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
     background: peachpuff;
-    position: absolute; 
-    left:0;
-    bottom:-10px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
     transition: 0.5s;
 }
 
-.navbar ul li:not(.last):hover::after{
-    width:100%;
+.navbar ul li:not(.last):hover::after {
+    width: 100%;
 }
+
 /* .navbar ul li:last-child :hover::after{
     width:0%;
 } */
-.heading{
-    width:100%;
-    position:absolute;
+.heading {
+    width: 100%;
+    position: absolute;
     top: 40%;
     text-align: center;
     color: white;
 }
 
-.heading h1{
+.heading h1 {
     font-size: 40px;
-    margin-top:25px;
+    margin-top: 25px;
 }
-.heading p{
-margin:20px;
-font-weight: 190;
-line-height: 10px;
+
+.heading p {
+    margin: 20px;
+    font-weight: 190;
+    line-height: 10px;
 }
-.heading button{
+
+.heading button {
     text-decoration: none;
     margin-top: 10px;
     padding: 20px;
     border-radius: 25px;
-    border:2px solid peachpuff;
-    background:transparent;
+    border: 2px solid peachpuff;
+    background: transparent;
 }
-.heading button a{
+
+.heading button a {
     text-decoration: none;
     font-weight: bold;
-font-size:x-large;
-color:white;
+    font-size: x-large;
+    color: white;
 }
+
 /* Css of about us page */
 
-.about, .vbody, .service-body, .contact-body, .apply-body{
+.about,
+.vbody,
+.service-body,
+.contact-body,
+.apply-body {
     width: 100%;
-    height: 110vh;
-    background-image: linear-gradient(rgba(77, 70, 71, 0.5),rgba(152, 89, 152, 0.25)),url(photo/cover.jfif);
+    height: 100vh;
+    /* background-image: linear-gradient(rgba(77, 70, 71, 0.5), rgba(152, 89, 152, 0.25)), url(photo/cover.jfif); */
+    background-image: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 25%)), url(photo/cover.jfif);
     min-height: 100%;
     background-repeat: repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    backdrop-filter: blur(5px);
+
 }
 
-.content{
-    width:100%;
-    position:absolute;
+.content {
+    width: 100%;
+    position: absolute;
     top: 35%;
     text-align: center;
-    color: white;  
-    font-family:'Times New Roman', Times, serif;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
     line-height: 25px;
 }
-.content h1{
+
+.content h1 {
     font-stretch: extra-expanded;
     font-weight: lighter;
     font-size: xxx-large;
 }
 
-.content p{
+.content p {
     margin-top: 25px;
     margin-left: 5%;
     margin-right: 5%;
@@ -139,6 +160,7 @@ color:white;
     font-weight: lighter;
 
 }
+
 /* body{
     background-image: linear-gradient(rgba(95, 93, 93, 0.519),rgba(114, 114, 114, 0.75)),url(cover2.jpg); 
     background-attachment: fixed;
@@ -147,24 +169,26 @@ color:white;
 } */
 
 /* Css of gallery */
-.image{
+.image {
     width: 100%;
-    height: 110vh;
-    background-image: linear-gradient(rgba(77, 70, 71, 0.5),rgba(152, 89, 152, 0.25)),url(photo/cover.jfif);
+    height: 100vh;
+    background-image: linear-gradient(rgba(77, 70, 71, 0.5), rgba(152, 89, 152, 0.25)), url(photo/cover.jfif);
     min-height: 100%;
     background-repeat: repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    backdrop-filter: blur(5px);
 }
 
-.gallery{
-    width:100%;
-    margin-top:20px;
+.gallery {
+    width: 100%;
+    margin-top: 20px;
     justify-content: center;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
+
 .gallery img {
     width: 328px;
     object-fit: cover;
@@ -173,47 +197,52 @@ color:white;
     transition: transform 0.3s ease;
     border-radius: 20px;
     margin: 10px;
-    border: 5px solid white;
+    border: 5px solid rgb(239, 217, 217);
 }
 
 .gallery img:hover {
     cursor: pointer;
-    transform: translateY(-6px); /* slightly zoom in */
+    transform: translateY(-6px);
+    /* slightly zoom in */
 }
 
 /* css for service page*/
-.whole{
-    background: linear-gradient(rgba(95, 93, 93, 0.519),rgba(114, 114, 114, 0.75)),url(photo/aboutBg2.jpg); 
+.whole {
+    background: linear-gradient(rgba(95, 93, 93, 0.519), rgba(114, 114, 114, 0.75)), url(photo/aboutBg2.jpg);
     background-size: cover;
-    height:100vh;
+    height: 100vh;
 }
-.event{
-    display:flex;
+
+.event {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     box-sizing: border-box;
 }
-.event h1{
-    font-size:xxx-large;
+
+.event h1 {
+    font-size: xxx-large;
     color: white;
     margin: 25px;
     text-align: center;
     font-weight: 500;
 }
- .content-box{
-    display:flex;
+
+.content-box {
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 30px;
     gap: 50px;
-} 
-.card{
+}
+
+.card {
     min-height: 240px;
-    width:250px;
-    padding:20px;
+    width: 250px;
+    padding: 20px;
     border-radius: 20px;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -222,110 +251,126 @@ color:white;
     box-shadow: 0px 15px 30px rgba(249, 247, 247, 0);
     transition: transform 0.3s ease;
 }
-.card:hover{
+
+.card:hover {
     cursor: pointer;
     transform: translateY(-6px);
 }
-.card h2{
+
+.card h2 {
     margin-bottom: 10px;
     font-weight: 400px;
 }
-.card p{
+
+.card p {
     text-align: justify;
     word-spacing: -1px;
     color: rgb(68, 68, 68);
 }
-.card button{
+
+.card button {
     text-decoration: none;
     margin-top: 15px;
     padding: 10px;
     border-radius: 5px;
-    border:2px solid rgb(21, 20, 19);
-    background:transparent;
+    border: 2px solid rgb(21, 20, 19);
+    background: transparent;
 
-   
+
 }
-.card button a{
+
+.card button a {
     text-decoration: none;
     font-weight: bold;
-    font-size:large;
-    color:rgb(109, 149, 218);
+    font-size: large;
+    color: rgb(109, 149, 218);
 }
-.card button :hover{
+
+.card button :hover {
     cursor: pointer;
-    color:rgb(28, 100, 224);
+    color: rgb(28, 100, 224);
 }
+
 /* css for contact us */
- .headingcon{
-    margin:0;
+.headingcon {
+    margin: 0;
     padding: 0;
-     width:100%;
-     /*
+    width: 100%;
+    /*
     max-width: 800px; */
     align-items: center;
     text-align: center;
     color: #fff;
     /* justify-content: space-between; */
-    
+
 }
-.headingcon h2{
+
+.headingcon h2 {
     align-items: center;
     justify-content: center;
     font-size: xxx-large;
 }
-.headingcon p{
+
+.headingcon p {
     font-size: large;
-   
+
 }
- .container  {
-position: relative;
-padding: 20px;
-display:flex;
-/* justify-content: left; */
+
+.container {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    /* justify-content: left; */
 }
- .text{
-    display:flex;
+
+.text {
+    display: flex;
     /* justify-content: center; */
-    padding:20px;
+    padding: 20px;
     align-items: left;
     font-size: 22px;
     margin-left: 20px;
     flex-direction: column;
     font-weight: 300;
     color: #fff;
-} 
-.map{
-    align-items:right;
+}
+
+.map {
+    align-items: right;
     justify-content: right;
 
 }
- .map img{
+
+.map img {
     margin-top: 10px;
-    width:800px;
+    width: 800px;
     margin-left: 120px;
-    display:flex;
+    display: flex;
     object-fit: cover;
 
 }
+
 /*css for apply form*/
-.booking{
-    display:flex;
+.booking {
+    display: flex;
     /* height:100vh; */
     /* justify-content:space-between; */
     /* padding-top:90px; */
     /* box-sizing:border-box; */
 }
-.view{
-    display:flex;
+
+.view {
+    display: flex;
     align-items: left;
     font-weight: 500;
-    color:#fff;
+    color: #fff;
     flex-direction: column;
-    padding-left:50px;
-    padding-right:90px;
+    padding-left: 50px;
+    padding-right: 90px;
     padding-top: 150px;
 }
-.cbooktb{
+
+.cbooktb {
     align-items: center;
     margin-top: 20px;
     margin-left: 5%;
@@ -333,10 +378,11 @@ display:flex;
     font-weight: 500;
     justify-content: space-between;
     background-color: #93A5CF;
-    border-color:antiquewhite;
+    border-color: antiquewhite;
     border-spacing: 5px;
     width: 500px;
- }
+}
+
 /* .view ul li{
     list-style: none;
     display:flex;
@@ -351,71 +397,85 @@ display:flex;
     justify-content: space-between;
     margin-bottom: 10px;
 } */
-.applyform{
+.applyform {
     align-items: center;
     max-width: 700px;
-    width:100%;
+    width: 100%;
     background-color: rgb(237, 233, 228);
-    padding:25px 30px; 
+    padding: 25px 30px;
     border-radius: 20px;
     margin-top: 50px;
 }
-.applyform input{
+
+.applyform input {
     padding-left: 5px;
 }
-.applyform .applytitle{
+
+.applyform .applytitle {
     font-size: 25px;
     font-weight: 500;
     margin-top: 5px;
 }
-     form .user-details, .services-checkbox{
-        display:flex;
-        flex-wrap: wrap; 
-        justify-content: space-between;
-     }
 
-    .input-box{
-        width: calc(100% /2 - 20px);
-     }
-     .details{
-        display:block;
-        font-weight: 500;
-        margin-top: 10px;;
-        margin-bottom: 5px;
-        flex-direction: row;
-     }
-     .levent, .lvenue, .lpriest{
-        width: calc(100% /2 - 20px);
-     }
-     .levent select, input{
-        height:35px;
-        width: 100%;
-     }
-     .levent select{
-        width: calc(100% + 6px);
-     }
-     .button{
-        height:35px;
-        margin:25px 0;
-     }
-     .button input{
-        height:100%;
-        width:100%;
-        outline: none;
-        border:none;
-        font-size:18px;
-        font-weight:500;
-        border-radius: 5px;
-        letter-spacing: 1px;
-        background:linear-gradient(135deg,#93A5CF, #d0d5d2);
-     }
-    
-     .button input:hover{
-        background: linear-gradient(-135deg,#93A5CF,#d0d5d2);
-     }
+form .user-details,
+.services-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-     /* booked page css */
-     /* .booked{
+.input-box {
+    width: calc(100% /2 - 20px);
+}
+
+.details {
+    display: block;
+    font-weight: 500;
+    margin-top: 10px;
+    ;
+    margin-bottom: 5px;
+    flex-direction: row;
+}
+
+.levent,
+.lvenue,
+.lpriest {
+    width: calc(100% /2 - 20px);
+}
+
+.levent select,
+input {
+    height: 35px;
+    width: 100%;
+}
+
+.levent select {
+    width: calc(100% + 6px);
+}
+
+.button {
+    height: 35px;
+    margin: 25px 0;
+}
+
+.button input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #93A5CF, #d0d5d2);
+}
+
+.button input:hover {
+    background: linear-gradient(-135deg, #93A5CF, #d0d5d2);
+}
+
+/* booked page css */
+/* .booked{
         background-image: linear-gradient(135deg,rgba(147, 165, 207, 0.45) ,rgba(147, 165, 207, 0.65)),url(photo/aboutBg2.jpg); 
         background-size: cover;
         min-height:100vh;
@@ -427,8 +487,8 @@ display:flex;
         font-size: xx-large;
         font-weight: 500;
      } */
-    
-     /* .cbooktb table{
+
+/* .cbooktb table{
         align-items: center;
         margin-top: 20px;
         margin-left: calc(100%/3);
@@ -439,104 +499,118 @@ display:flex;
        border-color:antiquewhite;
        border-spacing: 5px;
      } */
-    /* css for user.php */
-    .pbody{
-        width: 100%;
-        height: 110vh;
-        background-image: linear-gradient(rgba(77, 70, 71, 0.5),rgba(152, 89, 152, 0.25)),url(photo/cover.jfif);
-        min-height: 100%;
-        background-repeat: repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-    }
-    .top{
-        background-color: rgb(166, 162, 162);
-        height:100vh;
-    }
-    .user{
-        background-color: rgb(166, 162, 162);
-        height:100vh;
-    }
-    .listpp{
-        background-color: rgb(166, 162, 162);
-        height:100vh;
-        width:100%
+/* css for user.php */
+.pbody {
+    width: 100%;
+    height: 110vh;
+    background-image: linear-gradient(rgba(77, 70, 71, 0.5), rgba(152, 89, 152, 0.25)), url(photo/cover.jfif);
+    min-height: 100%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px);
+}
 
-    }
-     .thank{
-        background-image: linear-gradient(135deg,rgba(147, 165, 207, 0.45) ,rgba(147, 165, 207, 0.65)),url(photo/aboutBg2.jpg); 
-        background-size: cover;
-        height: 200vh;
-        align-items: center;
-        margin-bottom: 20px;
+.top {
+    background-color: rgb(166, 162, 162);
+    height: 100vh;
+}
 
-     }
-     .thank h1{
-        margin-left: 35%;
-     }
-     .thank .square{
-        position:absolute;
-        left:35%;
-        top:200px;
-        width: 360px;
-        height: 60%;
-        padding: 10px;
-        border: 5px solid gray;
-        margin: 0;
-        padding-left: 50px;
-        font-weight: 500;
-        background-color: #93A5CF;
-    
-     }
-     .thank table{
-        position:absolute;
-        left:15%;
-        margin-top: 10px;
-        background-color: #93A5CF;
-     }
-     .thank .pd{
-        margin-top: 50px;
-     }
-     .square h3{
-        font-size: xx-large;
-        font-weight: 500;
-    
-     }
-     .tphp{
-        font-size: larger;
-        margin-left: 10px;
-        margin-right: 20px;
-        margin-bottom: 10px;
-        width:360px;
-        height:50%;
-        letter-spacing: normal;
-        justify-content: space-between;
-        letter-spacing: 2px;
-     }
-     .tphp button{
-        text-decoration: none;
-        margin-right: 20px;
-        margin-top: 15px;
-        padding: 10px;
-        border-radius: 5px;
-        border:2px solid rgb(245, 244, 243);
-        background:transparent;
-    
-       
-    }
-    .tphp button a{
-        text-decoration: none;
-        font-weight: bold;
-    font-size:large;
-    color:black;
-    }
-    .tphp button :hover{
-        cursor: pointer;
-        opacity: 0.5;
-        color:rgb(102, 86, 86);
-    }
-    /* .form-submit-button {
+.user {
+    background-color: rgb(166, 162, 162);
+    height: 100vh;
+}
+
+.listpp {
+    background-color: rgb(166, 162, 162);
+    height: 100vh;
+    width: 100%
+}
+
+.thank {
+    background-image: linear-gradient(135deg, rgba(147, 165, 207, 0.45), rgba(147, 165, 207, 0.65)), url(photo/aboutBg2.jpg);
+    background-size: cover;
+    height: 200vh;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.thank h1 {
+    margin-left: 35%;
+}
+
+.thank .square {
+    position: absolute;
+    left: 35%;
+    top: 200px;
+    width: 360px;
+    height: 60%;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+    padding-left: 50px;
+    font-weight: 500;
+    background-color: #93A5CF;
+
+}
+
+.thank table {
+    position: absolute;
+    left: 15%;
+    margin-top: 10px;
+    background-color: #93A5CF;
+}
+
+.thank .pd {
+    margin-top: 50px;
+}
+
+.square h3 {
+    font-size: xx-large;
+    font-weight: 500;
+
+}
+
+.tphp {
+    font-size: larger;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 360px;
+    height: 50%;
+    letter-spacing: normal;
+    justify-content: space-between;
+    letter-spacing: 2px;
+}
+
+.tphp button {
+    text-decoration: none;
+    margin-right: 20px;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(245, 244, 243);
+    background: transparent;
+
+
+}
+
+.tphp button a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    color: black;
+}
+
+.tphp button :hover {
+    cursor: pointer;
+    opacity: 0.5;
+    color: rgb(102, 86, 86);
+}
+
+/* .form-submit-button {
         background: #0066A2;
         color: white;
         border-style: outset;
@@ -546,31 +620,33 @@ display:flex;
         font: bold15px arial,sans-serif;
         text-shadow: none;
     } */
-    /* input[type=button], input[type=submit], input[type=reset] { */
-       input#go{
-        background:transparent;
-        font-weight: bold;
-        font-size:large;
-        color:black;
-        text-decoration: none;
-        text-decoration: none;
-        margin-right: 0px;
-        margin-top: 15px;
-        padding: 10px;
-        border-radius: 5px;
-        border:2px solid rgb(245, 244, 243);
-        flex-direction: row;
-      }
-      input#go:hover{
-        cursor: pointer;
-        opacity: 0.5;
-        color:rgb(102, 86, 86);
-      }
-     
-      .success{
-        margin-top: 50%;
-      }
-      .dropbtn img{
-        margin: 6px 5px 0px 0px;
-        border-radius: 50%;
-      }
+/* input[type=button], input[type=submit], input[type=reset] { */
+input#go {
+    background: transparent;
+    font-weight: bold;
+    font-size: large;
+    color: black;
+    text-decoration: none;
+    text-decoration: none;
+    margin-right: 0px;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(245, 244, 243);
+    flex-direction: row;
+}
+
+input#go:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    color: rgb(102, 86, 86);
+}
+
+.success {
+    margin-top: 50%;
+}
+
+.dropbtn img {
+    margin: 6px 5px 0px 0px;
+    border-radius: 50%;
+}
